@@ -13,7 +13,6 @@ class RoleListView(generics.ListCreateAPIView):
 class RoleDetailsView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Role.objects.all()
     serializer_class = RoleSerializers
-    # lookup_fields = ['student_no']
 
 
 class MultipleFieldLookupMixin(object):
@@ -33,4 +32,4 @@ class MultipleFieldLookupMixin(object):
 class RetrieveUserView(MultipleFieldLookupMixin, generics.RetrieveAPIView):
     queryset = Role.objects.all()
     serializer_class = RoleSerializers
-    lookup_fields = ['student_no']
+    lookup_fields = ['referenceNumber']

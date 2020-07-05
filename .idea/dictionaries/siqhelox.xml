@@ -3,6 +3,8 @@
     <words>
       <w>allauth</w>
       <w>authtoken</w>
+      <w>cors</w>
+      <w>corsheaders</w>
     </words>
   </dictionary>
 </component>
