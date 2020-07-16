@@ -23,7 +23,6 @@ class LogInView(views.APIView):
         else:
             return Response(form.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
 # new
 class LogOutView(views.APIView):
     permission_classes = (permissions.IsAuthenticated,)
