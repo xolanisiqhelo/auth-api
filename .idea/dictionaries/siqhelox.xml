@@ -5,6 +5,7 @@
       <w>authtoken</w>
       <w>cors</w>
       <w>corsheaders</w>
+      <w>whitenoise</w>
     </words>
   </dictionary>
 </component>
