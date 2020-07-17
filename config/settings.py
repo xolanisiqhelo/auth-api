@@ -66,7 +66,7 @@ TEMPLATES = [
 ]
 
 # WSGI_APPLICATION = 'config.wsgi.application'
-ALLOWED_HOSTS = ['myapplication.herokuapp.com']
+ALLOWED_HOSTS = ['smrtauth.herokuapp.com']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -131,3 +131,5 @@ REST_FRAMEWORK = {
 }
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+django_heroku.settings(locals())
