@@ -8,4 +8,4 @@ class Role(models.Model):
     referenceNumber = models.CharField(max_length=10)
 
     def __str__(self):
-        return '{},{}'.format(self.user, self.role, self.referenceNumber)
+        return '{},{},{}'.format(self.user, self.role, self.referenceNumber)
