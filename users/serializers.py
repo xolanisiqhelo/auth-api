@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class RoleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Role
-        fields = ['role']
+        fields = ['role', 'referenceNumber']
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
