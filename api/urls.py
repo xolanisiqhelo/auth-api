@@ -5,5 +5,4 @@ urlpatterns = [
     path('role', RoleListView.as_view()),
     path('role/<pk>', RoleDetailsView.as_view()),
     path('role/<referenceNumber>/', RetrieveUserView.as_view())
-
 ]
